@@ -1,6 +1,6 @@
 # Feifan-Melody-Riley_CreativeCodingGP
 
-**Created by:** Feifan, Melody Sun, Riley
+**Created by:** Feifan Ling, Melody Sun, Riley Arico
 
 **Course:** Creative Coding, Pratt Institute
 
@@ -18,9 +18,9 @@
 
 ## Meet the Designers
 
-- **Feifan:** [Brief description of their tile designs or contribution.]
+- **Feifan Ling:** [Brief description of their tile designs or contribution.]
 - **Melody Sun:** My tiles design incorporates flowers, lines, and diamonds. For this project, I contributed to creating the user input code, formatting the final printed canvas (the color palettes, text, alignment, size, etc), and uploading files to the GitHub
-- **Riley:** [Brief description of their tile designs or contribution.]
+- **Riley Arico:** [Brief description of their tile designs or contribution.]
 
 ## Try it yourself
 
