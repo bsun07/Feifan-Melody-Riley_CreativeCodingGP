@@ -25,8 +25,7 @@
 Copy this code into a Colab Notebook.
 
 ```python
-!git clone https://github.com/sarahchase/cc-f26-group-project.git
-%cd cc-f26-group-project
+!git clone https://github.com/bsun07/Feifan-Melody-Riley_CreativeCodingGP
 !pip install -r requirements.txt
 from project import generate_poster
 generate_poster()
@@ -46,7 +45,7 @@ Or click below to open an example notebook in Google Colab and generate your own
 ## Files
 
 - `project.py` – Main poster-generation program.
-- `feifan.py` – Collection of custom tile-drawing functions.
+- `tilecollection.py` – Collection of custom tile-drawing functions.
 - `palette.py` – Available color palettes.
 - `requirements.txt` – Required Python libraries.
 - `example_poster.svg` – Scalable vector version of an example final poster image.
