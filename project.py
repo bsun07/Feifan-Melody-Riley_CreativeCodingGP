@@ -8,7 +8,7 @@ tile_functions = [draw_feifan_tile, draw_riley_tile, draw_melody_tile]
 # Create one function to handle everything
 def generate_poster():
 
- title_text = input("Enter a title for your poster: ")
+title_text = input("Enter a title for your poster: ")
 
 nrows = int(input("Grid height: "))
 while nrows < 3 or nrows > 8:
