@@ -46,7 +46,7 @@ def generate_poster():
       b = np.random.randint(256)
       palette[key] = (r, g, b)
    else:
-   palette = palette_options[p_name]
+      palette = palette_options[p_name]
 
 
 print("Success! Now generating your poster...")
