@@ -388,9 +388,6 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
 # ------------------------------------------
 if tile_type == "corner":
 
-
-
-
   ############## This part is my own drawing #######################
   ################## Change it to your design ######################
     t.pencolor(palette["accent"])
