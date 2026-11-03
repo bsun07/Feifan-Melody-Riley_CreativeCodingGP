@@ -1,9 +1,7 @@
 from ColabTurtlePlus.Turtle import *
 import numpy as np
 
-from feifan import *
-from riley import *
-from melody import *
+from tilecollection import *
 from palettes import *
 
 # Create one function to handle everything
