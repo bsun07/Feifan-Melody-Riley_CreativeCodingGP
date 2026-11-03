@@ -319,23 +319,6 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
 
 # Function definition for person 2 here
 def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
-"""
-Draws a parameterized geometric tile centered at (x, y).
-
-
-
-
-Parameters:
-- t: Turtle object
-- x, y (float/int): Center coordinates of the tile
-- size (float/int): Width and height of the tile bounding box
-- rotation (int): Orientation angle (0, 90, 180, 270)
-- palette (dict): RGB tuples with keys 'bg', 'primary', 'secondary', 'accent'
-- tile_type (str): "center", "border", or "corner" (defaults to "center")
-"""
-
-
-
 
 # ==========================================
 # TURTLE SETUP
@@ -690,23 +673,6 @@ t.pencolor((0, 0, 0))
 
 
 def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
-"""
-Draws a parameterized geometric tile centered at (x, y).
-
-
-
-
-Parameters:
-- t: Turtle object
-- x, y (float/int): Center coordinates of the tile
-- size (float/int): Width and height of the tile bounding box
-- rotation (int): Orientation angle (0, 90, 180, 270)
-- palette (dict): RGB tuples with keys 'bg', 'primary', 'secondary', 'accent'
-- tile_type (str): "center", "border", or "corner" (defaults to "center")
-"""
-
-
-
 
 # ==========================================
 # TURTLE SETUP
