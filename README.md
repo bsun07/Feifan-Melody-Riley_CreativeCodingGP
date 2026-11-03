@@ -8,7 +8,7 @@
 
 ## About the Project
 
-[Write a short description of your project. What was the idea behind your poster generator? What visual qualities or design ideas inspired it? How does the program combine everyone's individual tile designs into a unified composition?]
+For this poster generator, we made our own seperate palettes and tiles, and then collaborated by bringing them together in this interactive project. Users can pick between each of our palettes, while the tiles are randomly picked from either of our tile libraries. Tiles change orientation and apperance based on their coordinates in the grid, in which it's size is given by the user as well.
 
 ## The Interface
 
@@ -20,7 +20,7 @@
 
 - **Feifan Ling:** [Brief description of their tile designs or contribution.]
 - **Melody Sun:** My tiles design incorporates flowers, lines, and diamonds. For this project, I contributed to creating the user input code, formatting the final printed canvas (the color palettes, text, alignment, size, etc), and uploading files to the GitHub
-- **Riley Arico:** [Brief description of their tile designs or contribution.]
+- **Riley Arico:** My tiles were inspired by halloween with the moody color palette and spiderwebs. I contributed to this project by making sure the rotation and placement of tiles were accurate given the size of the grid.
 
 ## Try it yourself
 
