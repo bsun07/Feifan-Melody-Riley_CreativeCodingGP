@@ -10,6 +10,8 @@ from riley import *
 from melody import *
 from palette import *
 
+# Create one function to handle everything
+def generate_poster():
 
 title_text = input("Enter a title for your poster: ")
 
