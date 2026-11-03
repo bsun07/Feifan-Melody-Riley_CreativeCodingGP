@@ -1,7 +1,9 @@
 # Feifan-Melody-Riley_CreativeCodingGP
 
 **Created by:** Feifan, Melody Sun, Riley
-**Course:** Creative Coding, Pratt Institute  
+
+**Course:** Creative Coding, Pratt Institute
+
 **Semester:** Fall 2026
 
 ## About the Project
