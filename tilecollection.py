@@ -319,54 +319,54 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
 
 # Function definition for person 2 here
 def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
-
-# ==========================================
-# TURTLE SETUP
-# ==========================================
-t.penup()
-t.jumpto(x, y)
-t.setheading(rotation)
-
-
-
-
-# Useful relative dimension constants (derived from size)
-half = size / 2
-quarter = size / 4
-
-
-
-
-# ==========================================
-# BASE BACKGROUND
-# All tile variations share a clean backdrop
-# ==========================================
-# Move to the bottom-left corner relative to orientation
-t.forward(-half)
-t.left(90)
-t.forward(-half)
-t.right(90)
-
-
-
-
-t.pencolor(palette["bg"])
-t.fillcolor(palette["bg"])
-t.pensize(2)
-t.pendown()
-t.begin_fill()
-for _ in range(4):
-    t.forward(size)
-    t.left(90)
-t.end_fill()
-t.penup()
-
-
-
-
-# Return turtle to the true center of the tile
-t.jumpto(x, y)
-t.setheading(rotation)
+ 
+ # ==========================================
+ # TURTLE SETUP
+ # ==========================================
+ t.penup()
+ t.jumpto(x, y)
+ t.setheading(rotation)
+ 
+ 
+ 
+ 
+ # Useful relative dimension constants (derived from size)
+ half = size / 2
+ quarter = size / 4
+ 
+ 
+ 
+ 
+ # ==========================================
+ # BASE BACKGROUND
+ # All tile variations share a clean backdrop
+ # ==========================================
+ # Move to the bottom-left corner relative to orientation
+ t.forward(-half)
+ t.left(90)
+ t.forward(-half)
+ t.right(90)
+ 
+ 
+ 
+ 
+ t.pencolor(palette["bg"])
+ t.fillcolor(palette["bg"])
+ t.pensize(2)
+ t.pendown()
+ t.begin_fill()
+ for _ in range(4):
+     t.forward(size)
+     t.left(90)
+ t.end_fill()
+ t.penup()
+ 
+ 
+ 
+ 
+ # Return turtle to the true center of the tile
+ t.jumpto(x, y)
+ t.setheading(rotation)
 
 
 
