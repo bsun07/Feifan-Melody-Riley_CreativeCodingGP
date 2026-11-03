@@ -27,7 +27,8 @@
 Copy this code into a Colab Notebook.
 
 ```python
-!git clone https://github.com/bsun07/Feifan-Melody-Riley_CreativeCodingGP
+!git clone https://github.com/bsun07/Feifan-Melody-Riley_CreativeCodingGP.git
+%cd Feifan-Melody-Riley_CreativeCodingGP
 !pip install -r requirements.txt
 from project import generate_poster
 generate_poster()
