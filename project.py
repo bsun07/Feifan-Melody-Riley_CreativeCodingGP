@@ -4,7 +4,7 @@ import numpy as np
 from feifan import *
 from riley import *
 from melody import *
-from palette import *
+from palettes import *
 
 # Create one function to handle everything
 def generate_poster():
