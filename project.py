@@ -9,44 +9,44 @@ from palette import *
 # Create one function to handle everything
 def generate_poster():
 
-title_text = input("Enter a title for your poster: ")
+   title_text = input("Enter a title for your poster: ")
 
 
-nrows = int(input("Grid height: "))
-while nrows < 3 or nrows > 8:
-   print("Should be between 3 and 8.")
-   nrows = int(input("Grid height "))
-
-
-
-
-ncols = int(input("Grid width: "))
-while ncols < 3 or ncols > 8:
-   print("Should be between 3 and 8.")
-   ncols = int(input("Grid width "))
-
-
-p_name = input("Enter the name of the color palette you wish to use: ").lower()
-while p_name not in palette_names:
- print(f"Invalid palette name. The valid names are {palette_names}.")
- p_name = input("Enter the name of the color palette you wish to use: ").lower()
-
-
-print(f"You have selected the {p_name} palette.")
-
-
-if p_name == "random":
- print("Now generating a random color palette...")
- palette = {}
-
-
- for key in ["bg", "primary", "secondary", "accent"]:
-   r = np.random.randint(256)
-   g = np.random.randint(256)
-   b = np.random.randint(256)
-   palette[key] = (r, g, b)
-else:
-palette = palette_options[p_name]
+   nrows = int(input("Grid height: "))
+   while nrows < 3 or nrows > 8:
+      print("Should be between 3 and 8.")
+      nrows = int(input("Grid height "))
+   
+   
+   
+   
+   ncols = int(input("Grid width: "))
+   while ncols < 3 or ncols > 8:
+      print("Should be between 3 and 8.")
+      ncols = int(input("Grid width "))
+   
+   
+   p_name = input("Enter the name of the color palette you wish to use: ").lower()
+   while p_name not in palette_names:
+    print(f"Invalid palette name. The valid names are {palette_names}.")
+    p_name = input("Enter the name of the color palette you wish to use: ").lower()
+   
+   
+   print(f"You have selected the {p_name} palette.")
+   
+   
+   if p_name == "random":
+    print("Now generating a random color palette...")
+    palette = {}
+   
+   
+    for key in ["bg", "primary", "secondary", "accent"]:
+      r = np.random.randint(256)
+      g = np.random.randint(256)
+      b = np.random.randint(256)
+      palette[key] = (r, g, b)
+   else:
+   palette = palette_options[p_name]
 
 
 print("Success! Now generating your poster...")
