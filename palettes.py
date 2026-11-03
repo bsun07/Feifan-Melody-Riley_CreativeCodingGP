@@ -36,4 +36,3 @@ palette_names = list(palette_options.keys()) + ["random"]
 palette_names = list(palette_options)
 palette_names.append("random")
 print(f"The available color palettes are: {palette_names}")
-tile_functions = [draw_feifan_tile, draw_riley_tile, draw_melody_tile]
