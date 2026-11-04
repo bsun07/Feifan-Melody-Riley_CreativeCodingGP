@@ -1,5 +1,7 @@
 # Feifan-Melody-Riley_CreativeCodingGP
 
+[ExamplePoster.png]
+
 **Created by:** Feifan Ling, Melody Sun, Riley Arico
 
 **Course:** Creative Coding, Pratt Institute
