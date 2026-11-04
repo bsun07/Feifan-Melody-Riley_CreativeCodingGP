@@ -11,6 +11,14 @@
 For this poster generator, we made our own seperate palettes and tiles, and then collaborated by bringing them together in this interactive project. Users can pick between each of our palettes, while the tiles are randomly picked from either of our tile libraries. Tiles change orientation and apperance based on their coordinates in the grid, in which it's size is given by the user as well.
 
 This is a procedural poster built in Google Colab
+We made it so that User Input would determine the outcome of the Final Poster
+
+## How This Code Works
+This code is a combination of our own tile files, merging and uniting our individual color palette and boarder, corner, and center designs so that the resulting mash of the tiles would look coherent and put together.
+We have three different Python Scripts that all communicate together 
+  - tilecollection.py The Bread and Butter of our Project, this is where all our designs go
+  - palettes.py The Color Palette of Each of our Projects
+  - project.py The main compiler that communicates with each file
 
 
 ## The Interface
