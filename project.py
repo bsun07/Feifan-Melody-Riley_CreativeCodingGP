@@ -6,8 +6,10 @@ import matplotlib
 from tilecollection import *
 from palettes import *
 
+smallsize = (400, 400)
 my_picture = Image.open("ExamplePoster.png")
-display(my_picture)
+downsized_pic = my_picture.resize(smallsize)
+display(downsized_pic)
 
 tile_functions = [draw_feifan_tile, draw_riley_tile, draw_melody_tile]
 # Create one function to handle everything
