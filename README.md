@@ -62,7 +62,7 @@ generate_poster()
 
 Or click below to open an example notebook in Google Colab and generate your own poster!
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1g8I1uFZbpUEFFmbOImjLkuaz0aFzOD4U?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hC5VyLhlMBT9Fdnm37CXHUjFnpgze5MF?usp=sharing)
 
 ### How to Use
 
