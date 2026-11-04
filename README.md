@@ -33,7 +33,7 @@ The Width and Height are limited between 3-8 lengths long
 During generation, the code will determine the type of tile, then randomly select between one of the members design, 
 For example, the code will figure out if a tile is a corner, boarder, or center, then got through the different designs and choose member A out of B or C for their boarder design, then the code will repeat 
 
-
+The code will then display the final outcome of the design, incorporating the color palettes and randomly generated tiles with the user inputted title, and will display (from top to bottom) the tile design, the title, and the hex color palette
 ## The Interface
 
 **What can the users modify?**
