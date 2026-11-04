@@ -4,7 +4,8 @@ import numpy as np
 from tilecollection import *
 from palettes import *
 
-Image('ExamplePoster.png', width=120 height=100)
+my_picture = Image.open("ExamplePoster.png")
+display(my_picture)
 
 tile_functions = [draw_feifan_tile, draw_riley_tile, draw_melody_tile]
 # Create one function to handle everything
