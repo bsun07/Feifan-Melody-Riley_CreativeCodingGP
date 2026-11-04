@@ -77,7 +77,9 @@ def generate_poster():
     
     y_offset = screen_height / 2 - 100 - size / 2
     x_offset = size * (ncols - 1) / 2
-    
+    randRotCenter = random.choice([180, 90, 0, 270])
+    randRotUpDown = random.choice([180, 0])
+    randRotLR = random.choice([90, 270])
     for row in range(nrows):
       y = y_offset - row * size
       for col in range(ncols):
@@ -103,19 +105,19 @@ def generate_poster():
         elif row == 0 and (col != 0 and col != ncols): #TOP
            F(t, x, y, size, 0, palette, "border")
            tile_type = "border"
-           rotation = 0
+           rotation = randRotUpDown
         elif row == nrows - 1 and (col != 0 and col != ncols): #BOTTOM
           F(t, x, y, size, 180, palette, "border")
           tile_type = "border"
-          rotation = 180
+          rotation = randRotUpDown
         elif col == 0 and (row != 0 and row != nrows): #RIGHT
           F(t, x, y, size, 270, palette, "border")
           tile_type = "border"
-          rotation = 270
-        elif col == ncols - 1 and (row != 0 and row != nrows):
+          rotation = randRotLR
+        elif col == ncols - 1 and (row != 0 and row != nrows): #LEFT
           F(t, x, y, size, 90, palette, "border")
           tile_type = "border"
-          rotation = 90
+          rotation = randRotLR
         # elif row == ncols - 1 and (col != 0 and col != nrows):
         #    tile_type = "border"
         #    rotation = 0
@@ -130,7 +132,7 @@ def generate_poster():
         else:
            F(t, x, y, size, 0, palette, "center")
            tile_type = "center"
-           rotation = 0
+           rotation = randRotCenter
         #F(t, x, y, size, rotation, palette, tile_type)
     
     grid_bottom_y = y_offset - nrows * size
