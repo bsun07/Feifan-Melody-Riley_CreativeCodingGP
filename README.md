@@ -1,6 +1,6 @@
 # Feifan-Melody-Riley_CreativeCodingGP
 
-[ExamplePoster.png]
+![Poster](ExamplePoster.png)
 
 **Created by:** Feifan Ling, Melody Sun, Riley Arico
 
