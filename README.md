@@ -18,7 +18,7 @@ For this poster generator, we made our own seperate palettes and tiles, and then
 
 ## Meet the Designers
 
-- **Feifan Ling:** [Brief description of their tile designs or contribution.]
+- **Feifan Ling:** My tiles include semicircles that have a rainbow effect, border lines, and a flower mandala design. For this project, I contributed to debugging the code and making sure that it ran smoothly.
 - **Melody Sun:** My tiles design incorporates flowers, lines, and diamonds. For this project, I contributed to creating the user input code, formatting the final printed canvas (the color palettes, text, alignment, size, etc), and uploading files to the GitHub
 - **Riley Arico:** My tiles were inspired by halloween with the moody color palette and spiderwebs. I contributed to this project by making sure the rotation and placement of tiles were accurate given the size of the grid.
 
