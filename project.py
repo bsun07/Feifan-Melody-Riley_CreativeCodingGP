@@ -4,6 +4,8 @@ import numpy as np
 from tilecollection import *
 from palettes import *
 
+Image('ExamplePoster.png', width=120 height=100)
+
 tile_functions = [draw_feifan_tile, draw_riley_tile, draw_melody_tile]
 # Create one function to handle everything
 def generate_poster():
