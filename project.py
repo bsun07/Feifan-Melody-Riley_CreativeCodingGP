@@ -1,5 +1,6 @@
 from ColabTurtlePlus.Turtle import *
 import numpy as np
+import random
 import PIL
 from PIL import Image
 import matplotlib
