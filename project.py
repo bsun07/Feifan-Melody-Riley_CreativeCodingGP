@@ -1,6 +1,8 @@
 from ColabTurtlePlus.Turtle import *
 import numpy as np
-
+import PIL
+from PIL import Image
+import matplotlib
 from tilecollection import *
 from palettes import *
 
