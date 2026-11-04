@@ -511,7 +511,7 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
      ii = 0
      while ii < 11:
        #drawing row of dots
-       t.dot(5);
+       #t.dot(5);
        t.jumpto(-x - half + xMargin + thisSpacing, ySpace)
        thisSpacing += 10
        ii += 1
