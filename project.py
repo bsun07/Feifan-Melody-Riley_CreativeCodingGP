@@ -80,12 +80,12 @@ def generate_poster():
     x_offset = size * (ncols - 1) / 2
     for row in range(nrows):
       y = y_offset - row * size
-      randRotCenter = random.choice([180, 90, 0, 270])
-      randRotUpDown = random.choice([180, 0])
-      randRotLR = random.choice([90, 270])
       for col in range(ncols):
         x = x_offset - col * size
         F = tile_functions[np.random.randint(len(tile_functions))]
+        randRotCenter = random.choice([180, 90, 0, 270])
+        randRotUpDown = random.choice([180, 0])
+        randRotLR = random.choice([90, 270])
         #corners
         if row == 0 and col == 0: # TOP RIGHT
           F(t, x, y, size, 0, palette, "corner")
