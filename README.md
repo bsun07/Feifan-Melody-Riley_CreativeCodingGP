@@ -22,12 +22,16 @@ We have three different Python Scripts that all communicate together
 
 ## Pseudocode
 We started with the idea that we would combine our tiles together
+
 The Color Palette and Design are Separated and named accordingly
 The user will name the Palette however they want, and choose a width and height
+
 The user will choose a Color Palette, the options will be displayed, if the user does not type in the right color palette name, a prompt will appear to remind them about the different palettes to choose from
+
 The Width and Height are limited between 3-8 lengths long
 
-During generation, the code will determine the type of tile, then randomly select between one of the members design, for example, the code will figure out if a tile is a corner, boarder, or center, then got through the different designs and choose member A out of B or C for their boarder design, then the code will repeat 
+During generation, the code will determine the type of tile, then randomly select between one of the members design, 
+For example, the code will figure out if a tile is a corner, boarder, or center, then got through the different designs and choose member A out of B or C for their boarder design, then the code will repeat 
 
 
 ## The Interface
