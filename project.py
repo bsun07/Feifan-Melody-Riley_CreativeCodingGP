@@ -104,19 +104,19 @@ def generate_poster():
           tile_type = "corner"
           rotation = 180
         elif row == 0 and (col != 0 and col != ncols): #TOP
-           F(t, x, y, size, 0, palette, "border")
+           F(t, x, y, size, randRotUpDown, palette, "border")
            tile_type = "border"
            rotation = randRotUpDown
         elif row == nrows - 1 and (col != 0 and col != ncols): #BOTTOM
-          F(t, x, y, size, 180, palette, "border")
+          F(t, x, y, size, randRotUpDown, palette, "border")
           tile_type = "border"
           rotation = randRotUpDown
         elif col == 0 and (row != 0 and row != nrows): #RIGHT
-          F(t, x, y, size, 270, palette, "border")
+          F(t, x, y, size, randRotLR, palette, "border")
           tile_type = "border"
           rotation = randRotLR
         elif col == ncols - 1 and (row != 0 and row != nrows): #LEFT
-          F(t, x, y, size, 90, palette, "border")
+          F(t, x, y, size, randRotLR, palette, "border")
           tile_type = "border"
           rotation = randRotLR
         # elif row == ncols - 1 and (col != 0 and col != nrows):
@@ -131,7 +131,7 @@ def generate_poster():
         #   tile_type = "border"
         #   rotation = 0
         else:
-           F(t, x, y, size, 0, palette, "center")
+           F(t, x, y, size, randRotCenter, palette, "center")
            tile_type = "center"
            rotation = randRotCenter
         #F(t, x, y, size, rotation, palette, tile_type)
