@@ -10,6 +10,9 @@
 
 For this poster generator, we made our own seperate palettes and tiles, and then collaborated by bringing them together in this interactive project. Users can pick between each of our palettes, while the tiles are randomly picked from either of our tile libraries. Tiles change orientation and apperance based on their coordinates in the grid, in which it's size is given by the user as well.
 
+This is a procedural poster built in Google Colab
+
+
 ## The Interface
 
 **What can the users modify?**
