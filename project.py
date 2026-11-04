@@ -78,11 +78,11 @@ def generate_poster():
     
     y_offset = screen_height / 2 - 100 - size / 2
     x_offset = size * (ncols - 1) / 2
-    randRotCenter = random.choice([180, 90, 0, 270])
-    randRotUpDown = random.choice([180, 0])
-    randRotLR = random.choice([90, 270])
     for row in range(nrows):
       y = y_offset - row * size
+      randRotCenter = random.choice([180, 90, 0, 270])
+      randRotUpDown = random.choice([180, 0])
+      randRotLR = random.choice([90, 270])
       for col in range(ncols):
         x = x_offset - col * size
         F = tile_functions[np.random.randint(len(tile_functions))]
