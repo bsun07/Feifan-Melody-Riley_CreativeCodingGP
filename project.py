@@ -54,10 +54,6 @@ def generate_poster():
     
     size = min(size_horizontal, size_vertical) * 0.8
     
-    print(size)
-    
-    print("Current palette keys:", list(palette.keys()))
-    
     clearscreen()
     setup(screen_width, screen_height)
     t = Turtle()
