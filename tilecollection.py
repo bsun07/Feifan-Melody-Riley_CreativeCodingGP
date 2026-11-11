@@ -212,9 +212,12 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
          t.forward(quarter * 0.7)
          t.end_fill()
          t.penup()
+         t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
+         t.dot(sixteenth * 0.8, palette["primary"])
+         t.penup()
      # 2. Concentric ring in secondary
      t.jumpto(x, y)
-     t.setheading(rotation + randRotCenter)
+     t.setheading(rotation)
      t.forward(quarter * 0.8)
      t.left(90)
      t.pencolor(palette["secondary"])
@@ -225,7 +228,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
      # 3. Inner 8-pointed star in secondary
      for offset in [45, 0]:
          t.jumpto(x, y)
-         t.setheading(rotation + offset + randRotCenter)
+         t.setheading(rotation + offset)
          t.forward(quarter * 0.5)
          t.left(135)
          t.color(palette["secondary"], palette["secondary"])
@@ -251,10 +254,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
      t.jumpto(x, y)
      t.dot(eighth * 0.7, palette["primary"])
      t.dot(sixteenth * 0.8, palette["bg"])
-     t.penup()
-     t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
-     t.dot(sixteenth * 0.8, palette["primary"])
-     t.penup()
+   
   
  # ==========================================
  # DRAW BORDER (OUTLINE AROUND TILE)
@@ -896,7 +896,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(rotation + i * 45 + randRotCenter)
+         t.setheading(rotation + i * 45)
          t.forward(quarter * 0.35)
          t.pendown()
          t.circle(quarter * 0.45, 180)
@@ -906,7 +906,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(rotation + i * 45 + 22.5 + randRotCenter)
+         t.setheading(rotation + i * 45 + 22.5)
          t.forward(quarter * 0.22)
          t.color(palette["primary"])
          t.pendown()
