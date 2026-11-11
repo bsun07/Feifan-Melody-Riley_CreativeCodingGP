@@ -57,7 +57,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # Return turtle to the true center of the tile
  t.jumpto(x, y)
  t.setheading(rotation)
-
+ art_rotation = random.choice([0, 90, 180, 270])
 
  ######################### YOUR CHANGES START HERE ###########################
 
@@ -197,7 +197,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
      for i in range(12):
          angle = i * 30
          t.jumpto(x, y)
-         t.setheading(rotation + angle)
+         t.setheading(art_rotation + angle)
          t.forward(quarter * 0.6)
          t.color(palette["primary"], palette["primary"])
          t.pendown()
@@ -214,7 +214,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
          t.penup()
      # 2. Concentric ring in secondary
      t.jumpto(x, y)
-     t.setheading(rotation)
+     t.setheading(art_rotation + angle)
      t.forward(quarter * 0.8)
      t.left(90)
      t.pencolor(palette["secondary"])
@@ -225,7 +225,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
      # 3. Inner 8-pointed star in secondary
      for offset in [45, 0]:
          t.jumpto(x, y)
-         t.setheading(rotation + offset)
+         t.setheading(art_rotation + offset)
          t.forward(quarter * 0.5)
          t.left(135)
          t.color(palette["secondary"], palette["secondary"])
@@ -238,7 +238,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
          t.penup()
      # 4. Center sun medallion in accent
      t.jumpto(x, y)
-     t.setheading(rotation)
+     t.setheading(art_rotation + angle)
      t.forward(eighth * 0.7)
      t.left(90)
      t.color(palette["accent"], palette["accent"])
@@ -372,7 +372,7 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # Return turtle to the true center of the tile
  t.jumpto(x, y)
  t.setheading(rotation)
-
+ art_rotation = random.choice([0, 90, 180, 270])
 
 
 
@@ -545,7 +545,7 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  
    t.jumpto(x,y)
-   t.setheading(rotation + 90) #Point the top
+   t.setheading(art_rotation + 90) #Point the top
    for i in range(0,6):
      t.forward(spiderSize)
      t.penup()
@@ -557,9 +557,9 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  
    #t.jumpto(x,y)
-   t.setheading(rotation + 90) #Point the top
+   t.setheading(art_rotation + 90) #Point the top
    t.forward(spiderSize)
-   t.setheading(rotation + 215) #Point the left
+   t.setheading(art_rotation + 215) #Point the left
    newSize=spiderSize
    newSize = (newSize*(math.sqrt(3)/2)) / math.sin(math.radians(65))
    for i in range(0,30):
@@ -723,7 +723,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # Return turtle to the true center of the tile
  t.jumpto(x, y)
  t.setheading(rotation)
- 
+ art_rotation = random.choice([0, 90, 180, 270])
  
  
  
@@ -896,7 +896,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(rotation + i * 45)
+         t.setheading(art_rotation + i * 45)
          t.forward(quarter * 0.35)
          t.pendown()
          t.circle(quarter * 0.45, 180)
@@ -906,7 +906,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(rotation + i * 45 + 22.5)
+         t.setheading(art_rotation + i * 45 + 22.5)
          t.forward(quarter * 0.22)
          t.color(palette["primary"])
          t.pendown()
@@ -925,7 +925,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(rotation + i * 45)
+         t.setheading(art_rotation + i * 45)
          t.forward(quarter * 1.15)
          t.pencolor(palette["accent"])
          t.pendown()
@@ -936,9 +936,9 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
      for i in range(4):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(rotation + i * 90 + 45)
+         t.setheading(art_rotation + i * 90 + 45)
          t.forward(quarter * 1.05)
-         t.setheading(rotation + i * 90 + 45)
+         t.setheading(art_rotation + i * 90 + 45)
          t.color(palette["primary"], palette["primary"])
          t.pendown()
          t.begin_fill()
