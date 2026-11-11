@@ -1,3 +1,4 @@
+import random
 ﻿# Function definition for person 1 here
 # Insert your name in the function name.
 # Do not change anything else yet!
