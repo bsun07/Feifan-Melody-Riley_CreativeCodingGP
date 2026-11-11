@@ -545,7 +545,7 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  
    t.jumpto(x,y)
-   t.setheading(90) #Point the top
+   t.setheading(rotation + 90) #Point the top
    for i in range(0,6):
      t.forward(spiderSize)
      t.penup()
@@ -557,9 +557,9 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  
    #t.jumpto(x,y)
-   t.setheading(90) #Point the top
+   t.setheading(rotation + 90) #Point the top
    t.forward(spiderSize)
-   t.setheading(215) #Point the left
+   t.setheading(rotation + 215) #Point the left
    newSize=spiderSize
    newSize = (newSize*(math.sqrt(3)/2)) / math.sin(math.radians(65))
    for i in range(0,30):
