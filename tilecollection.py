@@ -1,8 +1,9 @@
 import random
+randRotCenter = random.choice([0, 90, 180, 270])
 # Function definition for person 1 here
 # Insert your name in the function name.
 # Do not change anything else yet!
-def draw_feifan_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
+def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
  """
  Draws a parameterized geometric tile centered at (x, y).
 
@@ -198,7 +199,7 @@ def draw_feifan_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
      for i in range(12):
          angle = i * 30
          t.jumpto(x, y)
-         t.setheading(rotation + angle)
+         t.setheading(rotation + angle + randRotCenter)
          t.forward(quarter * 0.6)
          t.color(palette["primary"], palette["primary"])
          t.pendown()
@@ -218,7 +219,7 @@ def draw_feifan_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
          t.penup()
      # 2. Concentric ring in secondary
      t.jumpto(x, y)
-     t.setheading(rotation)
+     t.setheading(rotation + randRotCenter)
      t.forward(quarter * 0.8)
      t.left(90)
      t.pencolor(palette["secondary"])
@@ -229,7 +230,7 @@ def draw_feifan_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
      # 3. Inner 8-pointed star in secondary
      for offset in [45, 0]:
          t.jumpto(x, y)
-         t.setheading(rotation + offset)
+         t.setheading(rotation + offset + randRotCenter)
          t.forward(quarter * 0.5)
          t.left(135)
          t.color(palette["secondary"], palette["secondary"])
@@ -901,7 +902,7 @@ def draw_melody_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(rotation + i * 45)
+         t.setheading(rotation + i * 45 + randRotCenter)
          t.forward(quarter * 0.35)
          t.pendown()
          t.circle(quarter * 0.45, 180)
@@ -911,7 +912,7 @@ def draw_melody_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(rotation + i * 45 + 22.5)
+         t.setheading(rotation + i * 45 + 22.5 + randRotCenter)
          t.forward(quarter * 0.22)
          t.color(palette["primary"])
          t.pendown()
@@ -930,7 +931,7 @@ def draw_melody_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(rotation + i * 45)
+         t.setheading(rotation + i * 45 + randRotCenter)
          t.forward(quarter * 1.15)
          t.pencolor(palette["accent"])
          t.pendown()
@@ -941,7 +942,7 @@ def draw_melody_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
      for i in range(4):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(rotation + i * 90 + 45)
+         t.setheading(rotation + i * 90 + 45 + randRotCenter)
          t.forward(quarter * 1.05)
          t.setheading(rotation + i * 90 + 45)
          t.color(palette["primary"], palette["primary"])
