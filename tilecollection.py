@@ -252,8 +252,9 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
      t.penup()
      # 5. Bullseye center dots
      t.jumpto(x, y)
-     t.dot(eighth * 0.7, palette["primary"])
-     t.dot(sixteenth * 0.8, palette["bg"])
+     t.setheading(rotation + 45)
+     t.forward(quarter * 1.3)
+     t.dot(sixteenth * 0.8, palette["primary"])
    
   
  # ==========================================
@@ -938,7 +939,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
          t.jumpto(x, y)
          t.setheading(rotation + i * 90 + 45)
          t.forward(quarter * 1.05)
-         t.setheading(rotation + 45)
+         t.setheading(rotation + i * 90 + 45)
          t.color(palette["primary"], palette["primary"])
          t.pendown()
          t.begin_fill()
@@ -947,7 +948,9 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
              t.left(90)
          t.end_fill()
          t.penup()
-         t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
+         t.jumpto(x, y)
+         t.setheading(rotation + i * 45)
+         t.forward(quarter * 1.3)
          t.dot(quarter * 0.4, palette["primary"])
  
  
