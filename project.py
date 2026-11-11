@@ -131,10 +131,9 @@ def generate_poster():
         #   tile_type = "border"
         #   rotation = 0
         else:
-            randRotCenter = random.choice([0, 45, 90, 135, 180, 225, 270, 315])
-            F(t, x, y, size, randRotCenter, palette, "center")
+            randRotCenter = random.choice([0, 90, 180, 270])
+            F(t, x, y, size, rotation, palette, "center")
             tile_type = "center"
-            rotation = randRotCenter
         #F(t, x, y, size, rotation, palette, tile_type)
     
     grid_bottom_y = y_offset - nrows * size
