@@ -938,7 +938,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
          t.jumpto(x, y)
          t.setheading(rotation + i * 90 + 45)
          t.forward(quarter * 1.05)
-         t.setheading(rotation + 45)
+         t.setheading(rotation + i * 90 + 45)
          t.color(palette["primary"], palette["primary"])
          t.pendown()
          t.begin_fill()
