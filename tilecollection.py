@@ -1,7 +1,8 @@
+randRotCenter = random.choice([0, 90, 180, 270])
 # Function definition for person 1 here
 # Insert your name in the function name.
 # Do not change anything else yet!
-def draw_feifan_tile(t, x, y, size, random.choice([0, 90, 180, 270]), palette, tile_type="center"):
+def draw_feifan_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
  """
  Draws a parameterized geometric tile centered at (x, y).
 
@@ -678,7 +679,7 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # Function definition for person 3 here
  
 
-def draw_melody_tile(t, x, y, size, random.choice([0, 90, 180, 270]), palette, tile_type="center"):
+def draw_melody_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
  
  # ==========================================
  # TURTLE SETUP
