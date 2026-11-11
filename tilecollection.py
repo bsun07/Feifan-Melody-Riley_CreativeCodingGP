@@ -219,7 +219,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
          t.penup()
      # 2. Concentric ring in secondary
      t.jumpto(x, y)
-     t.setheading(rotation + randRotCenter)
+     t.setheading(rotation + angle + randRotCenter)
      t.forward(quarter * 0.8)
      t.left(90)
      t.pencolor(palette["secondary"])
