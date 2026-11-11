@@ -254,10 +254,10 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
      t.jumpto(x, y)
      t.dot(eighth * 0.7, palette["primary"])
      t.dot(sixteenth * 0.8, palette["bg"])
-     t.jumpto(x, y)
-     t.setheading(rotation + 45)
-     t.forward(quarter * 1.3)
+     t.penup()
+     t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
      t.dot(sixteenth * 0.8, palette["primary"])
+     t.penup()
    
   
  # ==========================================
@@ -949,14 +949,11 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
          for _ in range(4):
              t.forward(quarter * 0.2)
              t.left(90)
-         t.end_fill()
          t.penup()
-      
-      t.jumpto(x, y)
-      t.setheading(rotation + 45)
-      t.forward(quarter * 1.3)
-      t.dot(quarter * 0.8, palette["primary"])
- 
+         t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
+         t.dot(quarter * 0.8, palette["primary"])
+         t.end_fill()
+    
  
  # ==========================================
  # DRAW BORDER (OPTIONAL IF YOU WANT A BORDER)
