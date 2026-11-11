@@ -251,8 +251,8 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
      t.jumpto(x, y)
      t.dot(eighth * 0.7, palette["primary"])
      t.dot(sixteenth * 0.8, palette["bg"])
-    t.jumpto(x + quarter * 0.9, y + quarter * 0.9)
-    t.dot(sixteenth * 0.8, palette["primary"])
+   t.jumpto(x + quarter * 0.9, y + quarter * 0.9)
+   t.dot(sixteenth * 0.8, palette["primary"])
  # ==========================================
  # DRAW BORDER (OUTLINE AROUND TILE)
  # ==========================================
