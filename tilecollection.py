@@ -680,7 +680,7 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # Function definition for person 3 here
  
 
-def draw_melody_tile(t, x, y, size, randRotCenter, palette, tile_type="center"):
+def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  # ==========================================
  # TURTLE SETUP
