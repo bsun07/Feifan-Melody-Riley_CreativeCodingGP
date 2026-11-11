@@ -132,7 +132,7 @@ def generate_poster():
         #   rotation = 0
         else:
             randRotCenter = random.choice([0, 90, 180, 270])
-            F(t, x, y, size, rotation, palette, "center")
+            F(t, x, y, size, rotation + randRotCenter, palette, "center")
             tile_type = "center"
         #F(t, x, y, size, rotation, palette, tile_type)
     
