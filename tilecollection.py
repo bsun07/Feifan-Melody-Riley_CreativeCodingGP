@@ -194,6 +194,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # OPTION 3: CENTER TILE (Celestial Sunburst)
  # ------------------------------------------
  else:
+     randRotCenter = random.choice([0, 90, 180, 270])
      center_rotation = rotation + randRotCenter
      # 1. 12-ray radiating Sunburst in primary
      for i in range(12):
