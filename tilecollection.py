@@ -967,8 +967,8 @@ t.dot(quarter * 0.4, palette["primary"])
  
  ############## This part is my own drawing #######################
  ################## Change it to your design ######################
- t.pencolor(palette["secondary"])
- t.pensize(2)
+t.pencolor(palette["secondary"])
+t.pensize(2)
  
  
  
