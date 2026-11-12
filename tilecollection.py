@@ -954,8 +954,8 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
       t.penup()
 
     # Small decorative dot
-    t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
-    t.dot(quarter * 0.4, palette["primary"])
+   t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
+   t.dot(quarter * 0.4, palette["primary"])
     
  
  # ==========================================
