@@ -2,7 +2,6 @@ import random
 # Function definition for person 1 here
 # Insert your name in the function name.
 # Do not change anything else yet!
-randRotCenter = random.choice([0, 90, 180, 270])
 def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
  """
  Draws a parameterized geometric tile centered at (x, y).
@@ -890,6 +889,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # OPTION 3: CENTER TILE
  # ------------------------------------------
  else:
+     randRotCenter = random.choice([0, 90, 180, 270])
      center_rotation = rotation + randRotCenter
    ############## This part is my own drawing #######################
    ################## Change it to your design ######################
