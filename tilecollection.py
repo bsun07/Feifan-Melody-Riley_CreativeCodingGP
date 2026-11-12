@@ -953,9 +953,9 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
       t.end_fill()
       t.penup()
 
-# Small decorative dot
-t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
-t.dot(quarter * 0.4, palette["primary"])
+    # Small decorative dot
+    t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
+    t.dot(quarter * 0.4, palette["primary"])
     
  
  # ==========================================
@@ -974,23 +974,23 @@ t.pensize(2)
  
  
  # Go to the corner
-t.penup()
-t.jumpto(x, y)
-t.setheading(rotation)
-t.forward(-half)
-t.left(90)
-t.forward(-half)
-t.right(90)
+ t.penup()
+ t.jumpto(x, y)
+ t.setheading(rotation)
+ t.forward(-half)
+ t.left(90)
+ t.forward(-half)
+ t.right(90)
  
  
  
  
  # Draw the border
-t.pendown()
-for _ in range(4):
-    t.forward(size)
-    t.left(90)
-t.penup()
+ t.pendown()
+ for _ in range(4):
+     t.forward(size)
+     t.left(90)
+ t.penup()
  
  
  
@@ -1004,5 +1004,6 @@ t.penup()
  # TURTLE TEARDOWN
  # Reset pen, heading, and state for the next user
  # ==========================================
-t.setheading(0)
-t.pencolor((0, 0, 0))
+ t.penup()
+ t.setheading(0)
+ t.pencolor((0, 0, 0))
