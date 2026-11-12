@@ -1004,6 +1004,6 @@ t.penup()
  # TURTLE TEARDOWN
  # Reset pen, heading, and state for the next user
  # ==========================================
- t.penup()
- t.setheading(0)
- t.pencolor((0, 0, 0))
+t.penup()
+t.setheading(0)
+t.pencolor((0, 0, 0))
