@@ -1,4 +1,3 @@
-import random
 # Function definition for person 1 here
 # Insert your name in the function name.
 # Do not change anything else yet!
@@ -194,13 +193,11 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # OPTION 3: CENTER TILE (Celestial Sunburst)
  # ------------------------------------------
  else:
-     randRotCenter = random.choice([0, 90, 180, 270])
-     center_rotation = rotation + randRotCenter
      # 1. 12-ray radiating Sunburst in primary
      for i in range(12):
          angle = i * 30
          t.jumpto(x, y)
-         t.setheading(center_rotation + angle)
+         t.setheading(rotation + angle)
          t.forward(quarter * 0.6)
          t.color(palette["primary"], palette["primary"])
          t.pendown()
@@ -217,7 +214,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
          t.penup()
      # 2. Concentric ring in secondary
      t.jumpto(x, y)
-     t.setheading(center_rotation)
+     t.setheading(rotation)
      t.forward(quarter * 0.8)
      t.left(90)
      t.pencolor(palette["secondary"])
@@ -228,7 +225,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
      # 3. Inner 8-pointed star in secondary
      for offset in [45, 0]:
          t.jumpto(x, y)
-         t.setheading(center_rotation + offset)
+         t.setheading(rotation + offset)
          t.forward(quarter * 0.5)
          t.left(135)
          t.color(palette["secondary"], palette["secondary"])
@@ -258,7 +255,6 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
      t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
      t.dot(sixteenth * 0.8, palette["primary"])
      t.penup()
-   
   
  # ==========================================
  # DRAW BORDER (OUTLINE AROUND TILE)
@@ -549,7 +545,7 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  
    t.jumpto(x,y)
-   t.setheading(rotation + 90) #Point the top
+   t.setheading(90) #Point the top
    for i in range(0,6):
      t.forward(spiderSize)
      t.penup()
@@ -677,6 +673,7 @@ def draw_riley_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  # Function definition for person 3 here
  
+
 def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  # ==========================================
@@ -890,8 +887,6 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # OPTION 3: CENTER TILE
  # ------------------------------------------
  else:
-     randRotCenter = random.choice([0, 90, 180, 270])
-     center_rotation = rotation + randRotCenter
    ############## This part is my own drawing #######################
    ################## Change it to your design ######################
      t.pencolor(palette["secondary"])
@@ -901,7 +896,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(center_rotation + i * 45)
+         t.setheading(rotation + i * 45)
          t.forward(quarter * 0.35)
          t.pendown()
          t.circle(quarter * 0.45, 180)
@@ -911,7 +906,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(center_rotation + i * 45 + 22.5)
+         t.setheading(rotation + i * 45 + 22.5)
          t.forward(quarter * 0.22)
          t.color(palette["primary"])
          t.pendown()
@@ -930,7 +925,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
      for i in range(8):
          t.penup()
          t.jumpto(x, y)
-         t.setheading(center_rotation + i * 45)
+         t.setheading(rotation + i * 45)
          t.forward(quarter * 1.15)
          t.pencolor(palette["accent"])
          t.pendown()
@@ -939,24 +934,22 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  
      for i in range(4):
-      t.penup()
-      t.jumpto(x, y)
-      t.setheading(center_rotation + i * 90 + 45)
-      t.forward(quarter * 1.05)
-      t.setheading(center_rotation + i * 90 + 45)
-      t.color(palette["primary"], palette["primary"])
-      t.pendown()
-      t.begin_fill()
-      for _ in range(4):
-          t.forward(quarter * 0.2)
-          t.left(90)
-      t.end_fill()
-      t.penup()
-
-        # Small decorative dot
-      t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
-      t.dot(quarter * 0.4, palette["primary"])
-        
+         t.penup()
+         t.jumpto(x, y)
+         t.setheading(rotation + i * 90 + 45)
+         t.forward(quarter * 1.05)
+         t.setheading(rotation + 45)
+         t.color(palette["primary"], palette["primary"])
+         t.pendown()
+         t.begin_fill()
+         for _ in range(4):
+             t.forward(quarter * 0.2)
+             t.left(90)
+         t.end_fill()
+         t.penup()
+         t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
+         t.dot(quarter * 0.8, palette["primary"])
+ 
  
  # ==========================================
  # DRAW BORDER (OPTIONAL IF YOU WANT A BORDER)
@@ -967,43 +960,43 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  ############## This part is my own drawing #######################
  ################## Change it to your design ######################
-      t.pencolor(palette["secondary"])
-      t.pensize(2)
-       
-       
-       
-       
-       # Go to the corner
-      t.penup()
-      t.jumpto(x, y)
-      t.setheading(rotation)
-      t.forward(-half)
-      t.left(90)
-      t.forward(-half)
-      t.right(90)
-       
-       
-       
-       
-       # Draw the border
-      t.pendown()
-      for _ in range(4):
-          t.forward(size)
-          t.left(90)
-      t.penup()
-       
-       
-       
-       
-       ######################### YOUR CHANGES END HERE #############################
-       
-       
-       
-       
-       # ==========================================
-       # TURTLE TEARDOWN
-       # Reset pen, heading, and state for the next user
-       # ==========================================
-      t.penup()
-      t.setheading(0)
-      t.pencolor((0, 0, 0))
+ t.pencolor(palette["secondary"])
+ t.pensize(2)
+ 
+ 
+ 
+ 
+ # Go to the corner
+ t.penup()
+ t.jumpto(x, y)
+ t.setheading(rotation)
+ t.forward(-half)
+ t.left(90)
+ t.forward(-half)
+ t.right(90)
+ 
+ 
+ 
+ 
+ # Draw the border
+ t.pendown()
+ for _ in range(4):
+     t.forward(size)
+     t.left(90)
+ t.penup()
+ 
+ 
+ 
+ 
+ ######################### YOUR CHANGES END HERE #############################
+ 
+ 
+ 
+ 
+ # ==========================================
+ # TURTLE TEARDOWN
+ # Reset pen, heading, and state for the next user
+ # ==========================================
+ t.penup()
+ t.setheading(0)
+ t.pencolor((0, 0, 0))
