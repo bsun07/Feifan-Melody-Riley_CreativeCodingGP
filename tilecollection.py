@@ -974,23 +974,23 @@ t.pensize(2)
  
  
  # Go to the corner
- t.penup()
- t.jumpto(x, y)
- t.setheading(rotation)
- t.forward(-half)
- t.left(90)
- t.forward(-half)
- t.right(90)
+t.penup()
+t.jumpto(x, y)
+t.setheading(rotation)
+t.forward(-half)
+t.left(90)
+t.forward(-half)
+t.right(90)
  
  
  
  
  # Draw the border
- t.pendown()
- for _ in range(4):
-     t.forward(size)
-     t.left(90)
- t.penup()
+t.pendown()
+for _ in range(4):
+    t.forward(size)
+    t.left(90)
+t.penup()
  
  
  
