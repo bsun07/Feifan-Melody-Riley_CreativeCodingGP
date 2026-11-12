@@ -950,11 +950,11 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
          for _ in range(4):
              t.forward(quarter * 0.2)
              t.left(90)
-         t.penup()
-         t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
-         t.setheading(center_rotation + 90)
-         t.dot(quarter * 0.4, palette["primary"])
-         t.end_fill()
+       t.penup()
+       t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
+       t.setheading(center_rotation + 90)
+       t.dot(quarter * 0.4, palette["primary"])
+       t.end_fill()
     
  
  # ==========================================
