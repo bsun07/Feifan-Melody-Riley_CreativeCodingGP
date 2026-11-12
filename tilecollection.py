@@ -974,13 +974,13 @@ t.pensize(2)
  
  
  # Go to the corner
- t.penup()
- t.jumpto(x, y)
- t.setheading(rotation)
- t.forward(-half)
- t.left(90)
- t.forward(-half)
- t.right(90)
+t.penup()
+t.jumpto(x, y)
+t.setheading(rotation)
+t.forward(-half)
+t.left(90)
+t.forward(-half)
+t.right(90)
  
  
  
