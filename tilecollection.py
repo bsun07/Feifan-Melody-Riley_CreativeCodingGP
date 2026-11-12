@@ -967,43 +967,43 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
  
  ############## This part is my own drawing #######################
  ################## Change it to your design ######################
-t.pencolor(palette["secondary"])
-t.pensize(2)
- 
- 
- 
- 
- # Go to the corner
-t.penup()
-t.jumpto(x, y)
-t.setheading(rotation)
-t.forward(-half)
-t.left(90)
-t.forward(-half)
-t.right(90)
- 
- 
- 
- 
- # Draw the border
-t.pendown()
-for _ in range(4):
-    t.forward(size)
-    t.left(90)
-t.penup()
- 
- 
- 
- 
- ######################### YOUR CHANGES END HERE #############################
- 
- 
- 
- 
- # ==========================================
- # TURTLE TEARDOWN
- # Reset pen, heading, and state for the next user
- # ==========================================
-t.penup()
-t.setheading(0)
-t.pencolor((0, 0, 0))
+      t.pencolor(palette["secondary"])
+      t.pensize(2)
+       
+       
+       
+       
+       # Go to the corner
+      t.penup()
+      t.jumpto(x, y)
+      t.setheading(rotation)
+      t.forward(-half)
+      t.left(90)
+      t.forward(-half)
+      t.right(90)
+       
+       
+       
+       
+       # Draw the border
+      t.pendown()
+      for _ in range(4):
+          t.forward(size)
+          t.left(90)
+      t.penup()
+       
+       
+       
+       
+       ######################### YOUR CHANGES END HERE #############################
+       
+       
+       
+       
+       # ==========================================
+       # TURTLE TEARDOWN
+       # Reset pen, heading, and state for the next user
+       # ==========================================
+      t.penup()
+      t.setheading(0)
+      t.pencolor((0, 0, 0))
