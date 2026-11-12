@@ -986,11 +986,11 @@ t.right(90)
  
  
  # Draw the border
- t.pendown()
- for _ in range(4):
-     t.forward(size)
-     t.left(90)
- t.penup()
+t.pendown()
+for _ in range(4):
+    t.forward(size)
+    t.left(90)
+t.penup()
  
  
  
@@ -1004,6 +1004,5 @@ t.right(90)
  # TURTLE TEARDOWN
  # Reset pen, heading, and state for the next user
  # ==========================================
- t.penup()
- t.setheading(0)
- t.pencolor((0, 0, 0))
+t.setheading(0)
+t.pencolor((0, 0, 0))
