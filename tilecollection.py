@@ -194,7 +194,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # ------------------------------------------
  # OPTION 3: CENTER TILE (Celestial Sunburst)
  # ------------------------------------------
-else:
+ else:
      # 1. 12-ray radiating Sunburst in primary
      for i in range(12):
          angle = i * 30
