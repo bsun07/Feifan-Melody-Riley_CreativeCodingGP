@@ -194,12 +194,12 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # ------------------------------------------
  # OPTION 3: CENTER TILE (Celestial Sunburst)
  # ------------------------------------------
- else:
+else:
      # 1. 12-ray radiating Sunburst in primary
      for i in range(12):
          angle = i * 30
          t.jumpto(x, y)
-         t.setheading(rotation + randRotCenter)
+         t.setheading(rotation + angle)
          t.forward(quarter * 0.6)
          t.color(palette["primary"], palette["primary"])
          t.pendown()
@@ -214,12 +214,9 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
          t.forward(quarter * 0.7)
          t.end_fill()
          t.penup()
-         t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
-         t.dot(sixteenth * 0.8, palette["primary"])
-         t.penup()
      # 2. Concentric ring in secondary
      t.jumpto(x, y)
-     t.setheading(rotation + angle + randRotCenter)
+     t.setheading(rotation)
      t.forward(quarter * 0.8)
      t.left(90)
      t.pencolor(palette["secondary"])
@@ -230,7 +227,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
      # 3. Inner 8-pointed star in secondary
      for offset in [45, 0]:
          t.jumpto(x, y)
-         t.setheading(rotation + offset + randRotCenter)
+         t.setheading(rotation + offset)
          t.forward(quarter * 0.5)
          t.left(135)
          t.color(palette["secondary"], palette["secondary"])
