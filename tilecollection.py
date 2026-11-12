@@ -195,6 +195,7 @@ def draw_feifan_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # OPTION 3: CENTER TILE (Celestial Sunburst)
  # ------------------------------------------
  else:
+     rotation = rotation + randRotCenter
      # 1. 12-ray radiating Sunburst in primary
      for i in range(12):
          angle = i * 30
@@ -889,6 +890,7 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
  # OPTION 3: CENTER TILE
  # ------------------------------------------
  else:
+     rotation = rotation + randRotCenter
    ############## This part is my own drawing #######################
    ################## Change it to your design ######################
      t.pencolor(palette["secondary"])
