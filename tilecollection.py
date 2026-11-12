@@ -953,10 +953,10 @@ def draw_melody_tile(t, x, y, size, rotation, palette, tile_type="center"):
       t.end_fill()
       t.penup()
 
-    # Small decorative dot
-   t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
-   t.dot(quarter * 0.4, palette["primary"])
-    
+        # Small decorative dot
+      t.jumpto(x + quarter * 1.3, y + quarter * 1.3)
+      t.dot(quarter * 0.4, palette["primary"])
+        
  
  # ==========================================
  # DRAW BORDER (OPTIONAL IF YOU WANT A BORDER)
